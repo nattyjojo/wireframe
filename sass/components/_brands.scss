@@ -1,0 +1,15 @@
+
+@use "../variables/margins";
+@use "../utilities/mixins/grid";
+
+.brands{
+    margin: margins.$large margins.$secondary;
+    @include grid.grid;
+    &__brand{
+        &--footer{    
+            grid-column: 1 / span 2;  
+        }
+    }
+}
+
+

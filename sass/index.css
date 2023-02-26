@@ -1,0 +1,220 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeSpeed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* font weight */
+/* font size */
+/* line hight */
+/* font color */
+/* margin */
+/* design colors */ /* btn colors */
+/* border radius*/
+/* padding */
+.banner {
+  background-image: url("../../assets/banner-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1.875rem 0.625rem 0;
+  color: hsl(60deg, 100%, 100%);
+}
+.banner__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.banner__icon {
+  display: flex;
+  flex-direction: column;
+}
+.banner__icon--bar {
+  background-color: hsl(60deg, 100%, 100%);
+  margin: 0.125rem;
+  padding: 0.07rem 0.9rem;
+}
+.banner__roundBubble {
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 50%;
+  background-color: hsl(235deg, 64%, 59%);
+  position: absolute;
+  top: 7.1875rem;
+  left: 0.3125rem;
+}
+.banner__content {
+  text-align: center;
+  margin-top: 2.5rem;
+  position: relative;
+}
+.banner__title--bold {
+  font-weight: 900;
+}
+.banner__paragraph {
+  line-height: 1.5rem;
+  margin-top: 2.1875rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.banner__btn {
+  margin-top: 2.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+  border-style: none;
+  background: linear-gradient(90deg, rgb(48, 197, 195) 0%, rgb(23, 161, 208) 100%);
+  font-size: 0.875rem;
+  text-align: center;
+  color: hsl(60deg, 100%, 100%);
+}
+.banner__hero {
+  margin: 1.375rem 0 auto;
+}
+
+main {
+  margin: 0.625rem;
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.brands {
+  margin: 5rem 2.1875rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  grid-gap: 1.25rem;
+  filter: brightness(400%);
+}
+.brands__brand--footer {
+  grid-column: 1/span 2;
+}
+
+.services {
+  padding: 40px;
+}
+.services__head {
+  margin-bottom: 5rem;
+}
+.services__head--bar {
+  background-color: hsl(358deg, 100%, 74%);
+  width: 7.1875rem;
+  height: 0.25rem;
+  margin: 0 auto 1.5rem auto;
+}
+.services__head--main {
+  text-align: center;
+  font-weight: 900;
+}
+.services__head--main--tin {
+  font-weight: 400;
+}
+
+.articles {
+  text-align: center;
+  max-width: 25rem;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(123, 121, 121, 0.046);
+}
+.articles__bg {
+  position: relative;
+}
+.articles__innerImg, .articles__img {
+  display: flex;
+  justify-content: space-around;
+}
+.articles__img {
+  position: absolute;
+  top: 1.125rem;
+  left: 35%;
+}
+.articles__title {
+  font-weight: 900;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.articles__main {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(248deg, 3%, 45%);
+  line-height: 1.2rem;
+}
+.articles__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 20px;
+  color: rgb(78, 77, 77);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.about {
+  margin: 10px;
+}
+.about__bar {
+  background-color: hsl(358deg, 100%, 74%);
+  width: 7.1875rem;
+  height: 0.25rem;
+  margin: 3.75rem 0 1.5rem 0;
+}
+.about__title {
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.about__titleLight {
+  font-weight: 400;
+}
+.about__main {
+  font-weight: 100;
+}/*# sourceMappingURL=index.css.map */

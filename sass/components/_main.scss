@@ -1,0 +1,8 @@
+@use "../variables/margins";
+@use "../variables/fonts";
+
+main{
+    margin: margins.$uni-margin;
+    font-size: fonts.$fs-primary;
+    font-weight: fonts.$fw-primary;
+}

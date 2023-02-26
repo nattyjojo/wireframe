@@ -1,0 +1,21 @@
+
+@use "../utilities/mixins/barDesign";
+
+.about{
+    margin: 10px;
+    &__bar{
+        @include barDesign.verticalBar;
+        margin: 3.75rem 0 1.5rem 0;
+    }
+    &__title{
+        font-weight: 900;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+    &__titleLight{
+        font-weight: 400;
+    }
+    &__main{
+        font-weight: 100;
+    }
+}

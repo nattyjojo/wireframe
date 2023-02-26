@@ -1,0 +1,56 @@
+
+
+@use "../variables/fonts";
+@use "../variables/margins";
+@use "../variables/designColors";
+@use "../variables/btnAssets";
+@use "../variables/padding";
+@use "../utilities/mixins/flex";
+@use "../utilities/mixins/roundDesign";
+@use "../utilities/mixins/buttons";
+
+
+.banner{
+    background-image: url("../../assets/banner-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: padding.$primary;
+    color: fonts.$clr-primary;
+    &__nav{
+        @include flex.flexRow;
+    }
+    &__icon{
+        @include flex.flexColum;
+        &--bar{
+          background-color: designColors.$bar-clr;
+          margin: 0.125rem;
+          padding: .070rem .90rem;
+        }
+    }
+    &__roundBubble{
+        @include roundDesign.roundDesign;
+    }
+    &__content{
+        text-align: center;
+        margin-top: margins.$tertiary;
+        position: relative;
+    }
+    &__title{
+        &--bold{
+            font-weight: fonts.$fw-secondary;
+        }
+    }
+    &__paragraph{
+        line-height: fonts.$line-h;
+        margin-top: margins.$secondary;
+        font-size: fonts.$fs-secondary;
+        white-space: nowrap;
+    }
+    &__btn{
+        @include buttons.btn;
+    }
+    &__hero{
+        margin: margins.$primary 0 auto ;
+    }
+}

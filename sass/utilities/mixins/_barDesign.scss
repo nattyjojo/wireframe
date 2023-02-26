@@ -1,0 +1,9 @@
+
+
+@use "../../variables/designColors";
+
+@mixin verticalBar{
+    background-color: designColors.$primary;
+    width: 7.1875rem;
+    height: 0.25rem;
+}

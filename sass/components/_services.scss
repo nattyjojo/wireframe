@@ -1,0 +1,68 @@
+@use "../utilities/mixins/barDesign";
+@use "../variables/fonts";
+@use "../variables/margins";
+
+
+.services{
+    padding: 40px;
+    &__head{
+        margin-bottom: margins.$large;
+        &--bar{
+            @include barDesign.verticalBar;
+            margin: 0 auto 1.5rem auto;
+        }
+        &--main{
+            text-align: center;
+            font-weight: fonts.$fw-secondary;
+            &--tin{
+                font-weight: fonts.$fw-primary;
+            }
+        }
+    }
+   
+}
+.articles{
+    text-align: center;
+    max-width: 25rem;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(123, 121, 121, 0.046);
+    &__bg{        
+        position: relative;
+    }
+    &__innerImg{
+        display: flex;
+        justify-content: space-around;
+    }
+  
+    &__img{
+        @extend .articles__innerImg;
+        position: absolute;
+        top: 1.125rem;
+        left: 35%;
+    }
+    &__title{
+        font-weight: fonts.$fw-secondary;
+        font-size: fonts.$fs-secondary;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    &__main{
+        font-size: .80rem;
+        font-weight: fonts.$fw-primary;
+        color: fonts.$clr-accent;
+        line-height: 1.20rem;
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-top: 20px;
+        color: rgb(78, 77, 77);
+        font-size: .80rem;
+        font-weight: 500;
+
+    }
+    
+}

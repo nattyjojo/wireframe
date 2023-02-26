@@ -1,0 +1,14 @@
+@use "../../variables/btnAssets";
+@use "../../variables/margins";
+@use "../../variables/fonts";
+
+@mixin btn{
+    margin-top: margins.$tertiary;
+    padding: btnAssets.$padding;
+    border-radius: btnAssets.$radius;
+    border-style: none;
+    background: btnAssets.$gradient;
+    font-size: 0.875rem;
+    text-align: center;
+    color: fonts.$clr-primary;
+}

@@ -1,0 +1,11 @@
+@use "../../variables/designColors";
+
+@mixin roundDesign{
+    height: 0.625rem;
+    width: 0.625rem;
+    border-radius: 50%;
+    background-color: designColors.$round-clr-splash;
+    position: absolute;
+    top: 7.1875rem;
+    left: 0.3125rem;
+}
